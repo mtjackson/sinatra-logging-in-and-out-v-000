@@ -1,6 +1,6 @@
 class Helpers
   def self.current_user(session)
-    current_user = User.find_by(user_id: session["user_id"])
+    current_user = User.find_by_id(user_id session["user_id"])
     current_user
   end
 
