@@ -10,8 +10,10 @@
       <h1>Hello <%= Helpers.current_user[:username] %></h1>
       <h2>Balance: <%= Helpers.current_user[:balance] %></h2>
 
-    <a href="/logout">Logout</a>
+      <a href="/logout">Logout</a>
 
+    <% else %>
+      <% redirect '/error' %>
     <% end %>
 
   </body>
