@@ -6,5 +6,6 @@ class Helpers
 
   def is_logged_in?(session)
     if self.current_user.user_id
+      true
   end
 end
