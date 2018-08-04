@@ -5,6 +5,6 @@ class Helpers
   end
 
   def is_logged_in?(session)
-    if self
+    if self.current_user
   end
 end
